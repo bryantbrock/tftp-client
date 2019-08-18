@@ -13,7 +13,7 @@ $ python3 tftpclient.py -r "this is my message"
 ```
 In this case, in order to read something from the host, you must first write it and then you can read it.
 All of that is built in.
-* You will see a prompt: ```(type "default" for server running on localhost 10000)\n
+* You will see a prompt: ```(type "default" for server running on localhost 10000)
 Enter address of host:```
 * Enter address and you're done. 
 
