@@ -1,20 +1,17 @@
 # tftp-client
 A tftp client with minimal capabilities
 
-1) Setup a server ("default" is localhost 10000)
-```
-$ python3 tftpserver.py default --connect
-```
-Now that the server is up and running...
+1) Setup a test server (there is a built-in one running on mac under /private/tftpboot) 
 
-2) Give the tftp client a command (either read(-r) or write(-w) a message to the host)
+2) Give the tftp client a command (either put or get a file to the host)
 ```
-$ python3 tftpclient.py -r "this is my message"
+$ python3 tftp-client.py get test.txt
 ```
-In this case, in order to read something from the host, you must first write it and then you can read it.
-All of that is built in.
-* You will see a prompt: ```(type "default" for server running on localhost 10000)
-Enter address of host:```
-* Enter address and you're done. 
+At this stage in the client, I found a python script written from the RFC 1350 <a href="https://smitsgit.github.io/blog/html/2018/06/13/tftp.html">here</a>
 
+It had the ability to download the file and my goal was to give it the ability to upload a file. 
+
+I figure it out, with the exception that you must create an empty file within the tftp server folder with the same name as the file you wish to upload. Give it "chmod 777" permissions and then you can upload the file.
+
+The final goal will be to upload the file without having to first create it in the server. We shall see....
 
