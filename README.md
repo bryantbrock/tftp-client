@@ -11,7 +11,7 @@ At this stage in the client, I found a python script written from the RFC 1350 <
 
 It had the ability to download the file and my goal was to give it the ability to upload a file. 
 
-I figure it out, with the exception that you must create an empty file within the tftp server folder with the same name as the file you wish to upload. Give it "chmod 777" permissions and then you can upload the file.
+I figured it out, with the exception that you must create an empty file within the tftp server folder with the same name as the file you wish to upload. Give it "chmod 777" permissions and then you can upload the file.
 
 The final goal will be to upload the file without having to first create it in the server. We shall see....
 
